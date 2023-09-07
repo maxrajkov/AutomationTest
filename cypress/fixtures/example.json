@@ -1,0 +1,11 @@
+{
+  "name": "Using fixtures to represent data",
+  "email": "maxim@buildcon.org",
+  "pass": "12345678",
+  "about_me": "Prepare to be amazed as they embark on their thrilling journey to master the game of kings and queens.",
+  "first_name": "Maksim",
+  "last_name": "Rajkovic",
+  "birth_day": "27",
+  "birth_year": "2001",
+  "fide_ID": "1132"
+}

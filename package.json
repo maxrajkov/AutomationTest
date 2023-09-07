@@ -1,0 +1,16 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "description": "Outpost Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksim",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.17.3",
+    "cypress-mailosaur": "^2.13.0"
+  }
+}
