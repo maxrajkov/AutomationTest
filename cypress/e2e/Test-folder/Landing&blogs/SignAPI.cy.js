@@ -57,7 +57,7 @@ describe('Shoould sign Up on outpost chess app and activate profile in validatio
         cy.get(':nth-child(1) > .mailin').type(data.email);
         cy.get('#password-padd > .mailin').type(data.pass);
         cy.get('#butt1 > .text-join').click();
-        cy.url('https://app.outpostchess.com').should('include','/home-page');
+        cy.url('https://app.outpostchess.com').should('include','/home-page'); 
         cy.get(':nth-child(1) > .side-options > .left-sidetext').click();
         cy.get('#middle2 > #middle2-button-container > a > .svg-pancil').click();
         cy.get('a.flex-center > .rows > .grid-rows > .main-data').click();
@@ -94,7 +94,7 @@ describe('Shoould sign Up on outpost chess app and activate profile in validatio
         cy.get('.profile-info1 > :nth-child(1)').should('include.text','22');
         cy.get('.info-par > img').should('exist');
         cy.get(':nth-child(3) > :nth-child(3) > .info-par').should('include.text','1132');
-       // cy.get('#about-me').should('include.data','data.about_me');
+        cy.get('#about-me').should('include.data','data.about_me');
 
 
 
