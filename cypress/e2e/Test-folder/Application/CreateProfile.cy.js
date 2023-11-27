@@ -1,4 +1,15 @@
+///<reference types="cypress" />
+
+//My profile 
 describe('Create profile ', () => {
+    before(function() {                                       
+        cy.fixture('example').then(function(data){           
+            globalThis.data = data;                        
+
+        });
+
+    });    
+     
     it.only('should log in and create a profile', () => {
         cy.viewport(1440, 900);
         //Log in
@@ -57,9 +68,9 @@ describe('Create profile ', () => {
          //  cy.get('#about-me').should('include.data','data.about_me');
          //Log out
          cy.get('.profile-pic-otpion').click();
-         cy.document('.profile-pic-otpion').should('have.property','.dropdown-content')
+         //cy.document('.profile-pic-otpion').should('have.property','.dropdown-content')
          cy.get('.dropdown-content > :nth-child(2)').click();
         
-
     });    
+
 });

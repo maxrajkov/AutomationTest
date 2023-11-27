@@ -52,13 +52,14 @@ describe('Shoould sign Up on outpost chess app and activate profile in validatio
     });
     it.only('should log in and create a profile', () => {
         cy.viewport(1440, 900);
-        //Log in--
+        //Log in
         cy.visit('https://app.outpostchess.com/#/login');
         cy.get(':nth-child(1) > .mailin').type(data.email);
         cy.get('#password-padd > .mailin').type(data.pass);
         cy.get('#butt1 > .text-join').click();
+        //successful Log-in 
         cy.url('https://app.outpostchess.com').should('include','/home-page'); 
-         //Navigate to my profile --
+         //Navigate to my profile 
         cy.get(':nth-child(1) > .side-options > .left-sidetext').click();
         //Navigate to profile edit 
         cy.get('#middle2 > #middle2-button-container > a > .svg-pancil').click();
@@ -110,14 +111,6 @@ describe('Shoould sign Up on outpost chess app and activate profile in validatio
 
 
         
-
-        
-
-
-
-
-
-
 
 
 
